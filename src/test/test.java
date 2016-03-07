@@ -16,7 +16,7 @@ public class test {
             }
         });
         frame.getContentPane().add(
-                new CARead("E:/Java/jdk1.6.0_10/bin/server.crt"),
+                new CARead("E:/lhx/license.der"),
                 BorderLayout.CENTER);
         frame.setSize(700, 425);
         frame.setVisible(true);
