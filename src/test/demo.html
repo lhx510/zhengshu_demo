@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo</title>
+	<script type="text/javascript" src="../js/jtopo-0.4.8-min.js"></script>
+	<script type="text/javascript" src="../js/jquery1.8.3.js"></script>
+<script>
+	//创建三个全局变量
+	var canvas;
+	var stage; // 舞台对象
+	var scene; // 场景对象
+
+	$(document).ready(function(){
+		canvas = document.getElementById('canvas');
+		stage = new JTopo.Stage(canvas); // 创建一个舞台对象
+		scene = new JTopo.Scene(stage); // 创建一个场景对象
+		var node = new JTopo.Node("Hello");    // 创建一个节点
+		node.setLocation(300,200);    // 设置节点坐标
+		scene.add(node); // 放入到场景中
+	})
+	function add(){
+		var node1 = new JTopo.Node("Hello");    // 创建一个节点
+		node1.setLocation(400,300);    // 设置节点坐标
+		scene.add(node1); // 放入到场景中
+	}
+	function json(){
+		background.
+		/*alert(stage.toJson());*/
+		/*var jsonStr = stage.toJson;
+		console.log(jsonStr);
+		ttt.innerHTML = jsonStr;*/
+	}
+</script>
+</head>
+<body>
+<canvas width="850" height="550" id="canvas"></canvas>
+<button onclick="add()" value="添加">添加</button>
+<button onclick="json()" value="json">josn</button>
+<br>
+<textarea name="1" id="ttt" cols="100" rows="100">
+
+</textarea>
+</body>
+</html>

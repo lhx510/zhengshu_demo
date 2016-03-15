@@ -2,10 +2,6 @@ package test;
 
 /**
  * Created by Administrator on 16-3-7.
- */
-
-/**
- * Created With IntelliJ IDEA.
  *
  * @author : lee
  * @group : sic-ca
